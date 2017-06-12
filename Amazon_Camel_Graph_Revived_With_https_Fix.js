@@ -1,18 +1,17 @@
 // ==UserScript==
 // @name            Amazon Camel Graph Revived With https Fix
-// @version         1.1.5
+// @version         1.1.6
 // @description     Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace       https://github.com/jjohns71/Monkey-Scripts
 // @include         https://*.amazon.*/*
 // @include         https://amazon.*/*
-// @include         https://*.camelcamelcamel.com/*
-// @include         https://camelcamelcamel.com/*
 // @require         https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js
 // @require         https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
 // @grant           GM_xmlhttpRequest
 // @homepage	    https://github.com/jjohns71/Monkey-Scripts/blob/master/Amazon_Camel_Graph_Revived_With_https_Fix.js
 // @downloadURL 	https://raw.githubusercontent.com/jjohns71/Monkey-Scripts/master/Amazon_Camel_Graph_Revived_With_https_Fix.js
 // ==/UserScript==
+
 
 
 var width = 400;
