@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Amazon Camel Graph Revived With https Fix
-// @version         1.0.9
+// @version         1.1.0
 // @description     Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace       https://github.com/jjohns71/Monkey-Scripts
 // @include         https://*.amazon.*/*
@@ -43,9 +43,9 @@ GM_xmlhttpRequest({
 	var chartpost = 0;
 if (chart=="amazon"||chart=="amazon-new"||chart=="amazon-new-used"||chart=="amazon-used")
 {
-	if(responseDoc !== 'undefined')
+	if(responseDoc !=='undefined')
 	{
-        if (!responseDoc.getElementById('price_type_1').disabled)
+        if (!responseDoc.getElementById('price_type_1').disabled && chartpost===0)
         {
 $("#averageCustomerReviews_feature_div").append("<div id='camelcamelcamel' style='margin-top: 10px; margin-left: -10px'>" + link2 + "</div>");
 chartpost = 1;
