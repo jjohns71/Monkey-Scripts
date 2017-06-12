@@ -14,6 +14,8 @@
 // @include        https://www.southwest.com/flight/retrieveCheckinDoc.html*
 // @include        https://www.southwest.com/flight/selectPrintDocument*
 // @include        https://www.southwest.com/flight/retrieveCheckinDoc.html?int=HOME-BOOKING-WIDGET-AIR-CHECKIN#js-booking-panel-check-in
+// @homepage	   https://github.com/jjohns71/Monkey-Scripts/blob/master/Auto_Check-In_to_Southwest_Flights.user.js
+// @downloadURL	   https://raw.githubusercontent.com/jjohns71/Monkey-Scripts/master/Auto_Check-In_to_Southwest_Flights.user.js
 // @copyright      2009+, Nicholas Buroojy (http://userscripts.org/users/83813), 2017+, jjohns71
 // @license        GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 
