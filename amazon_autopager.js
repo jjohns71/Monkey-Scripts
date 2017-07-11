@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name			Amazon Autopager (Infinite Scroll)
-// @version			1.04
+// @version			1.04.1
+// @icon 			https://www.amazon.com/favicon.ico
 // @description		Loads next page of search results automatically on Amazon
 // @namespace		https://github.com/jjohns71/Monkey-Scripts
 // @author			Original: https://greasyfork.org/en/scripts/23471-amazon-autopager
