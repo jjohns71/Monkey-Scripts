@@ -2,7 +2,8 @@
 // @name            Quora Unblocker
 // @description     Removes the Quora login requirement and any nagging about it
 // @namespace       http://sindresorhus.com
-// @version         1.0.2
+// @version         1.0.3
+// @icon            https://github.com/favicon.ico
 // @author          Sindre Sorhus
 // @license         MIT
 // @released        2013-02-17
@@ -11,8 +12,8 @@
 // @match           *://quora.com/*
 // @match           *://www.quora.com/*
 // @run-at          document-start
-// @homepage	   https://github.com/jjohns71/Monkey-Scripts/blob/master/Quora_Unblocker.js
-// @downloadURL	   https://raw.githubusercontent.com/jjohns71/Monkey-Scripts/master/Quora_Unblocker.js
+// @homepage	    https://github.com/jjohns71/Monkey-Scripts/blob/master/Quora_Unblocker.js
+// @downloadURL	    https://raw.githubusercontent.com/jjohns71/Monkey-Scripts/master/Quora_Unblocker.js
 // @grant			GM_addStyle
 // ==/UserScript==
 (function () {
