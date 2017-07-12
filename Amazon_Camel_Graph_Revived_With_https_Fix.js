@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name            Amazon Camel Graph Revived With https Fix
-// @version         1.1.6
+// @version         1.1.7
+// @icon            https://www.amazon.com/favicon.ico
 // @description     Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace       https://github.com/jjohns71/Monkey-Scripts
 // @include         https://*.amazon.*/*
