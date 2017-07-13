@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name           Auto Check-In to Southwest Flights (https fix)
 // @namespace      https://github.com/jjohns71/Monkey-Scripts
-// @version        1.3.7
-// @icon           https://www.southwest.com/favicon.ico
+// @version        1.3.8
+// @icon           https://www.swamedia.com/assets/images/swa-favicon.jpg
 // @author         Original: Nicholas Buroojy (http://userscripts.org/users/83813) Rehosted: https://github.com/jjohns71/Monkey-Scripts
 // @contributor    Ryan Izzo (http://www.ryanizzo.com)
 // @contributor    jjohns71 (https://github.com/jjohns71)
