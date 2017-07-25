@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Amazon Camel Graph Revived With https Fix
-// @version         1.1.8
+// @version         1.1.9
 // @icon            https://www.amazon.com/favicon.ico
 // @description     Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace       https://github.com/jjohns71/Monkey-Scripts
@@ -17,7 +17,7 @@
 
 var width = 400;
 var height = 250;
-var chart = "new"; //Possible other values are "amazon", "new", "used", "new-used", & "amazon-new-used"
+var chart = "amazon-new-used"; //Possible other values are "amazon", "new", "used", "new-used", & "amazon-new-used"
 
 
 var arr = document.domain.split(".");
