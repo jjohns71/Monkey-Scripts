@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Amazon Camel Graph Revived With https Fix
-// @version         1.1.7
+// @version         1.1.8
 // @icon            https://www.amazon.com/favicon.ico
 // @description     Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace       https://github.com/jjohns71/Monkey-Scripts
@@ -17,7 +17,7 @@
 
 var width = 400;
 var height = 250;
-var chart = "amazon-new"; //Possible other values are "amazon", "new", "used", "new-used", & "amazon-new-used"
+var chart = "new"; //Possible other values are "amazon", "new", "used", "new-used", & "amazon-new-used"
 
 
 var arr = document.domain.split(".");
@@ -31,7 +31,7 @@ var asin = $.trim(element.attr("value"));
 		element = $(':input[id="ASIN"]');
 		asin = $.trim(element.attr("value"));
 		}
-var link2 = "<a  target='blank' href='https://camelcamelcamel.com/product/" + asin + "'><img src='https://charts.camelcamelcamel.com/" + country + "/" + asin + "/" + chart + ".png?force=1&zero=0&w=" + width + "&h=" + height + "&desired=false&legend=1&ilt=1&tp=all&fo=0' /></a>";
+var link2 = "<a  target='blank' href='https://camelcamelcamel.com/product/" + asin + "'><img src='https://charts.camelcamelcamel.com/" + country + "/" + asin + "/" + chart + ".png?force=1&zero=0&w=" + width + "&h=" + height + "&desired=false&legend=1&ilt=1&tp=all&fo=0&lang=en' /></a>";
 var camelurl = 'https://camelcamelcamel.com/product/' + asin;
 GM_xmlhttpRequest({
     method: 'GET',
