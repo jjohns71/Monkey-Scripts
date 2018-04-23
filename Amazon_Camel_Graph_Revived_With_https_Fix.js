@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Amazon Camel Graph Revived With https Fix
-// @version         1.2.0
+// @version         1.2.1
 // @icon            https://www.amazon.com/favicon.ico
 // @description     Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace       https://github.com/jjohns71/Monkey-Scripts
@@ -38,7 +38,7 @@ GM_xmlhttpRequest({
     url: camelurl,
     onload: function(response) {
 
-	var parser      = new DOMParser ();
+	var parser = new DOMParser ();
     	var responseDoc = parser.parseFromString (response.responseText, "text/html");
 	var chartpost = 0;
 if (chart=="amazon"||chart=="amazon-new"||chart=="amazon-new-used"||chart=="amazon-used")
@@ -89,10 +89,13 @@ var exp = new RegExp(pattern, "gi");
 var code = url.replace(exp,"$1");
 
 if (code === '')
+{
   code = 'com';
+}
 else if (code == 'uk')
+{
   code = 'co.uk';
-
+}
 $(document).ready(function () {
 	var links = document.evaluate("//a[contains(@href, 'camelcamelcamel.com')]", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
   	for (var i = 0; i < links.snapshotLength; i++)
