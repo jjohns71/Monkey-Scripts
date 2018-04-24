@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name           Amazon Camel Graph Revived/Fixed
 // @version        1.1.0
