@@ -1,12 +1,10 @@
 // ==UserScript==
 // @name           Amazon Camel Graph Revived/Fixed
-// @version        1.1.0
+// @version        1.1.1
 // @icon           https://www.amazon.com/favicon.ico
 // @description    Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace      https://github.com/jjohns71/Monkey-Scripts
 // @include        http*://*.amazon.*/*
-// @include        http*://*.camelcamelcamel.com/*
-// @include        http*://camelcamelcamel.com/*
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
 // @grant          GM_xmlhttpRequest
