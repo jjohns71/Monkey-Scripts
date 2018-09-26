@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           Amazon Camel Graph Revived/Fixed
-// @version        1.1.1
+// @version        1.1.2
 // @icon           https://www.amazon.com/favicon.ico
 // @description    Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace      https://github.com/jjohns71/Monkey-Scripts
@@ -15,10 +15,15 @@
 
 var width = 400;
 var height = 250;
-var chart = "amazon-new"; //Possible other values are "amazon", "new", "used", "new-used", & "amazon-new-used"
+var chart = "amazon-new-used"; //Possible other values are "amazon", "new", "used", "new-used", & "amazon-new-used"
 var arr = document.domain.split(".");
 var country = arr[arr.length - 1];
 if (country=="com") {country = "us";}
+
+/* 
+The following code errors out on some pages, e.g. https://www.amazon.com/dp/B001FNW09U/?th=1 
+but works on others e.g. https://www.amazon.com/dp/B004L5JCZ4/?th=1
+replaced ftSelectAsin with ASIN below
 
 var element = $(':input[id="ftSelectAsin"]');
 var asin = $.trim(element.attr("value"));
@@ -26,7 +31,17 @@ var asin = $.trim(element.attr("value"));
 		element = $(':input[id="ftSelectAsin"]');
 		asin = $.trim(element.attr("value"));
 		}
-var link2 = "<a  target='blank' href='https://" + country + ".camelcamelcamel.com/product/" + asin + "'><img src='https://charts.camelcamelcamel.com/" + country + "/" + asin + "/" + chart + ".png?force=1&zero=0&w=" + width + "&h=" + height + "&desired=false&legend=1&ilt=1&tp=all&fo=0' /></a>";
+        
+*/
+
+var element = $(':input[id="ASIN"]');
+var asin = $.trim(element.attr("value"));
+		if (asin=="") {
+		element = $(':input[id="ASIN"]');
+		asin = $.trim(element.attr("value"));
+		}
+
+var link2 = "<a  target='blank' href='https://" + country + ".camelcamelcamel.com/product/" + asin + "'><img src='https://charts.camelcamelcamel.com/" + country + "/" + asin + "/" + chart + ".png?force=1&zero=0&w=" + width + "&h=" + height + "&desired=false&legend=1&ilt=1&tp=all&fo=0&lang=en' /></a>";
 var camelurl = 'https://' + country + '.camelcamelcamel.com/product/' + asin;
 GM_xmlhttpRequest({
     method: 'GET',
