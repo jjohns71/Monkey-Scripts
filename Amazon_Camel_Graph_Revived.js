@@ -1,14 +1,15 @@
 // ==UserScript==
 // @name           Amazon Camel Graph Revived/Fixed
-// @version        1.1.2
+// @version        1.1.3
 // @icon           https://www.amazon.com/favicon.ico
 // @description    Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace      https://github.com/jjohns71/Monkey-Scripts
 // @include        http*://*.amazon.*/*
+// @exclude        /^https?://.*aws.amazon\.com/?/
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
 // @grant          GM_xmlhttpRequest
-// @homepage	   https://github.com/jjohns71/Monkey-Scripts/blob/master/Amazon_Camel_Graph_Revived.js
+// @homepage       https://github.com/jjohns71/Monkey-Scripts/blob/master/Amazon_Camel_Graph_Revived.js
 // @downloadURL    https://raw.githubusercontent.com/jjohns71/Monkey-Scripts/master/Amazon_Camel_Graph_Revived.js
 // ==/UserScript==
 
@@ -36,9 +37,9 @@ var asin = $.trim(element.attr("value"));
 
 var element = $(':input[id="ASIN"]');
 var asin = $.trim(element.attr("value"));
-		if (asin=="") {
-		element = $(':input[id="ASIN"]');
-		asin = $.trim(element.attr("value"));
+    if (asin=="") {
+    element = $(':input[id="ASIN"]');
+    asin = $.trim(element.attr("value"));
 		}
 
 var link2 = "<a  target='blank' href='https://" + country + ".camelcamelcamel.com/product/" + asin + "'><img src='https://charts.camelcamelcamel.com/" + country + "/" + asin + "/" + chart + ".png?force=1&zero=0&w=" + width + "&h=" + height + "&desired=false&legend=1&ilt=1&tp=all&fo=0&lang=en' /></a>";
@@ -49,7 +50,7 @@ GM_xmlhttpRequest({
     onload: function(response) {
 
 	var parser = new DOMParser ();
-    	var responseDoc = parser.parseFromString (response.responseText, "text/html");
+    var responseDoc = parser.parseFromString (response.responseText, "text/html");
 	var chartpost = 0;
 
 
