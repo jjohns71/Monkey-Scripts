@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           Amazon Camel Graph Revived/Fixed
-// @version        1.1.3
+// @version        1.1.4
 // @icon           https://www.amazon.com/favicon.ico
 // @description    Add CamelCamelCamel graph + link to Amazon product pages.
 // @namespace      https://github.com/jjohns71/Monkey-Scripts
@@ -42,7 +42,7 @@ var asin = $.trim(element.attr("value"));
     asin = $.trim(element.attr("value"));
 		}
 
-var link2 = "<a  target='blank' href='https://" + country + ".camelcamelcamel.com/product/" + asin + "'><img src='https://charts.camelcamelcamel.com/" + country + "/" + asin + "/" + chart + ".png?force=1&zero=0&w=" + width + "&h=" + height + "&desired=false&legend=1&ilt=1&tp=all&fo=0&lang=en' /></a>";
+var link2 = "<a  target='blank' href='https://" + country + ".camelcamelcamel.com/product/" + asin + "'><img src='https://charts.camelcamelcamel.com/" + country + "/" + asin + "/" + chart + ".png?force=1&zero=0&w=" + width + "&h=" + height + "&desired=false&legend=1&ilt=1&tp=all&fo=0&lang=en"' /></a>";
 var camelurl = 'https://' + country + '.camelcamelcamel.com/product/' + asin;
 GM_xmlhttpRequest({
     method: 'GET',
